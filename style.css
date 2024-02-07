@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img-conainer {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.choices {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.message{
+    color: green;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.choices img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%;
+    &:hover{
+        opacity: 0.5;;
+    }
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    border-top: 2px solid #333;
+    padding-top: 20px;
+}
+
+.score h3,
+.score p {
+    margin: 0;
+}
+
+.score p {
+    font-size: 20px;
+}
